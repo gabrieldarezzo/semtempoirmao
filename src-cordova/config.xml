@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="org.inwork.semtempoirmao" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Sem Tempo Irmão</name>
+    <description>Chama direto no WhatsApp sem precisar salvar o número.</description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <allow-intent href="market:*" />
+        <preference name="SplashMaintainAspectRatio" value="true" />
+        <preference name="SplashShowOnlyFirstTime" value="false" />
+        <icon qualifier="hdpi" src="res/icon/android/hdpi.png" />
+        <icon qualifier="ldpi" src="res/icon/android/ldpi.png" />
+        <icon qualifier="mdpi" src="res/icon/android/mdpi.png" />
+        <icon qualifier="xhdpi" src="res/icon/android/xhdpi.png" />
+        <icon qualifier="xxhdpi" src="res/icon/android/xxhdpi.png" />
+        <icon qualifier="xxxhdpi" src="res/icon/android/xxxhdpi.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <preference name="android-targetSdkVersion" value="28" />
+    <engine name="android" spec="^7.1.4" />
+</widget>
